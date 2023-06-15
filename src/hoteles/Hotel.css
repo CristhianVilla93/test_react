@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+
+.total{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-princ{
+    width: 1440px;
+
+}
+
+.buscador{
+    width: 297px;
+    height: 55px;
+    display: flex;
+}
+   
+.pais{
+    width: 138px;
+    height: 55px;
+}
+
+.personas{
+    display: flex;
+    width: 159px;
+    height: 55px;
+}
+.contenedor-sec1{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+
+    
+}
+
+.titulo-conte{
+   margin-inline-start: 48px;
+}
+
+.contenedor-cart{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}

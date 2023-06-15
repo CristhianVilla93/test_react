@@ -1,0 +1,60 @@
+.cartelera{
+    background-color: var(background-color);
+    width: 395px;
+    border-radius: 12px;
+    border: 2px solid brown;
+    padding: 5px;
+}
+
+.img{
+    border-radius: 12px;
+    width: 100%;
+}
+
+.detalles{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+   
+
+}
+
+.host{
+    width:100px ;
+    height: 28px;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #4F4F4F;
+    border-radius: 15px;
+}
+
+.mini-detalle1{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.mini-detalle2{
+    width: 25%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+}
+
+.img1{
+    width: 15%;
+    height: 15%;
+}
+
+.titulo{
+    height: 40px;
+}
+
+.titulo1{
+    margin: 0;
+}
