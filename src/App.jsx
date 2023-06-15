@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
-import Hotel from "./hoteles/hotel";
+
+import Cartelera from "./hoteles/Cartelera";
 
 
 function App() {
@@ -32,13 +33,45 @@ function App() {
   console.log(data);
   return (
     <>
+      <section className="total">
+        <div className="contenedor-princ">
+          <div className="contenedor-sec1">
+            <div>
+              <img src="src/img/logo.svg" alt="logo" />
+            </div>
 
-    <Hotel/>
+            <div className="buscador">
+              <input className="pais" type="text" />
+              <div className="personas">
+                <input className="cant-per" type="text" />
+                <button className="botoncito"><img src="src/inconos/lupa.svg" className="lupa"/></button>
+              </div>
+            </div>
+          </div>
+          <div className="contenedor-sec2">
+            <div className="tituprim">
+              <h1 className="titulo-conte">Stays in Finland</h1>
+              <span>12+ stays</span>
+            </div>
+            <div className="contenedor-cart">
+              {/* Aquí te dejo un ejemplo de cómo podrías imprimir varios elementos a la vez. */}
+              {data.map((el, index) => (
+                <>
+                  <Cartelera 
+                  src={el.photo}
+                  type={el.type}
+                  beds={el.beds}
 
-    {/* Aquí te dejo un ejemplo de cómo podrías imprimir varios elementos a la vez. */}
-      {data.map((el, i) => {
-        return <h1 key={i}>{el.city}</h1>;
-      })}
+                  rating={el.rating}
+                  title={el.title}
+                  key={index} />
+                  
+                </>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
