@@ -3,6 +3,7 @@ import "./Hotel.css"
 import React from 'react'
 import Cartelera from './Cartelera';
 
+
 export default function Hotel() {
   return (
     <>
