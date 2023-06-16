@@ -10,8 +10,8 @@ function Cartelera(props) {
         <img className='img' src={props.src} alt="alternado" />
         
         <div className='detalles'>
-            <div className='host'>
-                <h3 className="superhost">SUPER HOST</h3>
+            <div className={props.superHost ?'host': ""}>
+                {props.superHost ? "SUPERHOST":""}
             </div>
          
           <div className='mini-detalle1'>

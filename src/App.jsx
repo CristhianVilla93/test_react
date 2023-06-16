@@ -61,7 +61,7 @@ function App() {
                   src={el.photo}
                   type={el.type}
                   beds={el.beds}
-
+                  superHost={el.superHost}
                   rating={el.rating}
                   title={el.title}
                   key={index} />
