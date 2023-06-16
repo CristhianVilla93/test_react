@@ -1,7 +1,6 @@
 import "./Cartelera.css"
 
 
-
 function Cartelera(props) {
   return (
     <>
