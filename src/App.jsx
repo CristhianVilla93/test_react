@@ -58,13 +58,14 @@ function App() {
               {data.map((el, index) => (
                 <>
                   <Cartelera 
+                  key={index}
                   src={el.photo}
                   type={el.type}
                   beds={el.beds}
                   superHost={el.superHost}
                   rating={el.rating}
                   title={el.title}
-                  key={index} />
+                   />
                   
                 </>
               ))}
