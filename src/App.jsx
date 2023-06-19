@@ -2,7 +2,8 @@ import { useEffect, useState } from "react";
 import "./App.css";
 
 import Cartelera from "./hoteles/Cartelera";
-
+import lupa from './inconos/lup.svg';
+import logo from './img/logo.svg'
 
 function App() {
   
@@ -37,14 +38,14 @@ function App() {
         <div className="contenedor-princ">
           <div className="contenedor-sec1">
             <div>
-              <img src="src/img/logo.svg" alt="logo" />
+              <img src={logo} alt="logo" />
             </div>
 
             <div className="buscador">
               <input className="pais" type="text" />
               <div className="personas">
                 <input className="cant-per" type="text" />
-                <button className="botoncito"><img src="src/inconos/lupa.svg" className="lupa"/></button>
+                <button className="botoncito"><img src={lupa} className="lupa"/></button>
               </div>
             </div>
           </div>
@@ -58,14 +59,13 @@ function App() {
               {data.map((el, index) => (
                 <>
                   <Cartelera 
-                  key={index}
                   src={el.photo}
                   type={el.type}
                   beds={el.beds}
                   superHost={el.superHost}
                   rating={el.rating}
                   title={el.title}
-                   />
+                  key={index} />
                   
                 </>
               ))}

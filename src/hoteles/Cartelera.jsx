@@ -1,5 +1,5 @@
 import "./Cartelera.css"
-
+import star  from '../inconos/star.svg'
 
 function Cartelera(props) {
   return (
@@ -19,7 +19,7 @@ function Cartelera(props) {
           </div>
 
           <div className='mini-detalle2'>
-            <img className='img1' src="src/inconos/star.png" alt="" />
+            <img className='img1' src={star} alt="" />
             <h3 className="rating">{props.rating}</h3>
           </div>
         </div>
