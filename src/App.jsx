@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./App.css";
+import "./inconos/lupa.svg"
 
 import Cartelera from "./hoteles/Cartelera";
 

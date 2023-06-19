@@ -1,4 +1,5 @@
 import "./Cartelera.css"
+import "../inconos/star.png"
 
 
 function Cartelera(props) {
